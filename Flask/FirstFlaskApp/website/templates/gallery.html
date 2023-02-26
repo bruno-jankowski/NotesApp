@@ -1,0 +1,65 @@
+{% extends "base.html" %} {% block title %}Gallery{% endblock %} {% block
+content %}
+<style>
+  body {
+    margin: 0;
+    color: white;
+    background: #202731;
+  }
+  img {
+    width: 50%;
+    height: 50%;
+  }
+  .right {
+    width: 10%;
+    height: 170vh;
+    background-color: rgb(40, 45, 51);
+    position: absolute;
+    left: 90%;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 0px;
+    left: 95%;
+    bottom: 2%;
+    height: auto;
+    width: 10%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(228, 241, 255);
+  }
+</style>
+<div class="right"></div>
+<h1>GALERRY</h1>
+<br />
+
+<table>
+  <tr>
+    <td><img src="static/zdj1.JPG" /></td>
+    <td><img src="static/zdj2.JPG" /></td>
+  </tr>
+  <tr>
+    <td><img src="static/zdj3.JPG" /></td>
+    <td><img src="static/zdj4.JPG" /></td>
+  </tr>
+  <tr>
+    <td><img src="static/zdj1.JPG" /></td>
+    <td><img src="static/zdj2.JPG" /></td>
+  </tr>
+  <tr>
+    <td><img src="static/zdj3.JPG" /></td>
+    <td><img src="static/zdj4.JPG" /></td>
+  </tr>
+  <tr>
+    <td><img src="static/zdj1.JPG" /></td>
+    <td><img src="static/zdj2.JPG" /></td>
+  </tr>
+  <tr>
+    <td><img src="static/zdj3.JPG" /></td>
+    <td><img src="static/zdj4.JPG" /></td>
+  </tr>
+</table>
+<a class="fixed" href="#">
+  <img class="fixed" /><u><b>Go up</b></u></a
+>
+
+{% endblock %}
